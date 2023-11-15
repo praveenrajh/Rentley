@@ -6,11 +6,7 @@ const Header = () => {
   const { user } = useContext(UserContext);
   return (
     <header className="flex justify-between">
-      <Link
-        to={"/"}
-        href="https://rentley.netlify.app/"
-        className="flex items-center gap-1"
-      >
+      <Link to={"/"} className="flex items-center gap-1">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
