@@ -8,7 +8,7 @@ const Header = () => {
     <header className="flex justify-between">
       <Link
         to={"/"}
-        href="http://localhost:3000/"
+        href="https://rentley.netlify.app/"
         className="flex items-center gap-1"
       >
         <svg

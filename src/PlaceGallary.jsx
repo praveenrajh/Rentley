@@ -31,7 +31,10 @@ const PlaceGallary = ({ place }) => {
           {place?.photos?.length > 0 &&
             place.photos.map((photo) => (
               <div>
-                <img src={"http://localhost:4000/uploads/" + photo} alt="" />
+                <img
+                  src={"https://rentley-api.onrender.com/uploads/" + photo}
+                  alt=""
+                />
               </div>
             ))}
         </div>
@@ -48,7 +51,9 @@ const PlaceGallary = ({ place }) => {
               <img
                 onClick={() => setShowAllPhotos(true)}
                 className="aspect-square object-cover cursor-pointer"
-                src={"http://localhost:4000/uploads/" + place.photos[0]}
+                src={
+                  "https://rentley-api.onrender.com/uploads/" + place.photos[0]
+                }
               />
             </div>
           )}
@@ -58,7 +63,9 @@ const PlaceGallary = ({ place }) => {
             <img
               onClick={() => setShowAllPhotos(true)}
               className="aspect-square object-cover cursor-pointer"
-              src={"http://localhost:4000/uploads/" + place.photos[1]}
+              src={
+                "https://rentley-api.onrender.com/uploads/" + place.photos[1]
+              }
             />
           )}
           <div className="overflow-hidden">
@@ -66,7 +73,9 @@ const PlaceGallary = ({ place }) => {
               <img
                 onClick={() => setShowAllPhotos(true)}
                 className="aspect-square object-cover cursor-pointer relative top-2"
-                src={"http://localhost:4000/uploads/" + place.photos[2]}
+                src={
+                  "https://rentley-api.onrender.com/uploads/" + place.photos[2]
+                }
               />
             )}
           </div>
